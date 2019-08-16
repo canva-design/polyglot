@@ -1,0 +1,13 @@
+.root {
+  composes: text sizeSmall positive from "../font.css";
+
+  display: flex;
+  align-items: center;
+
+  height: 32px;
+  padding: 8px;
+  padding-right: 4px;
+
+  color: var(--figma-black-3);
+  background-color: var(--figma-white);
+}

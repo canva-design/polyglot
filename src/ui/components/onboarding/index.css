@@ -1,0 +1,31 @@
+.root {
+  align-items: center;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+  height: 100%;
+  padding: 30px;
+  padding-bottom: 10px;
+}
+
+.carousel {
+  display: flex;
+}
+
+.carouselFrame {
+  align-items: center;
+  display: none;
+  flex-flow: column;
+}
+
+.active {
+  display: flex;
+}
+
+.video {
+  box-shadow: var(--shadow-floating-window);
+  height: auto;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  width: 425px;
+}

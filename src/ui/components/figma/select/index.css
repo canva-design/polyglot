@@ -1,0 +1,179 @@
+.root {
+  composes: text sizeSmall from "../font.css";
+  position: relative;
+
+  display: flex;
+  flex-direction: row;
+  flex-grow: 2;
+  flex-wrap: nowrap;
+
+  width: 100%;
+}
+
+.select {
+  display: none;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+
+  width: 100%;
+  height: 30px;
+  height: 2.72em;
+  margin: 1px 0 1px 0 !important;
+
+  padding: 0 0.72em;
+
+  text-align: left;
+
+  cursor: pointer;
+
+  color: var(--figma-black-8);
+  border: 1px solid transparent;
+  border-radius: var(--border-radius-small);
+  background-color: var(--figma-white);
+
+  border: 1px solid var(--figma-black-1);
+}
+
+.button:focus {
+  border-color: var(--figma-blue);
+  outline: none;
+}
+
+.button span::after {
+  display: inline-block;
+
+  width: 7px;
+  height: 5px;
+
+  margin-left: 0.54em;
+  margin-top: 0.54em;
+
+  content: "";
+
+  background-color: transparent;
+  background-image: url("data:image/svg+xml;utf8,%3Csvg%20fill%3D%22none%22%20height%3D%225%22%20viewBox%3D%220%200%207%205%22%20width%3D%227%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20clip-rule%3D%22evenodd%22%20d%3D%22m3%203.70711-3-3.000003.707107-.707107%202.646443%202.64645%202.64645-2.64645.70711.707107-3%203.000003-.35356.35355z%22%20fill%3D%22%23000%22%20fill-opacity%3D%22.3%22%20fill-rule%3D%22evenodd%22%2F%3E%3C%2Fsvg%3E");
+}
+
+.button:hover {
+  padding: 0 8px;
+  padding: 0 0.73em;
+
+  border: 1px solid var(--figma-black-1);
+}
+
+.button:hover .chevronDown {
+  opacity: 1;
+}
+
+.button:hover span::after {
+  opacity: 0;
+}
+
+.list {
+  border-radius: var(--border-radius-small);
+
+  position: absolute;
+  z-index: 2;
+  top: 31px;
+  top: 2.8em;
+  right: 0;
+  left: 0;
+
+  display: block;
+  overflow: auto;
+
+  width: 100%;
+  margin: 0;
+  padding: 0;
+
+  list-style-type: none;
+
+  pointer-events: none;
+
+  opacity: 0;
+  box-shadow: 0 5px 17px rgba(0, 0, 0, 0.2), 0 2px 7px rgba(0, 0, 0, 0.15);
+
+  max-height: 150px;
+}
+
+.list::before {
+  display: block;
+
+  height: 8px;
+  height: 0.73em;
+
+  content: "";
+
+  border-top-left-radius: var(--border-radius-small);
+  border-top-right-radius: var(--border-radius-small);
+  background-color: var(--figma-hud);
+}
+
+.list::after {
+  display: block;
+
+  height: 8px;
+  height: 0.73em;
+
+  content: "";
+
+  border-bottom-right-radius: var(--border-radius-small);
+  border-bottom-left-radius: var(--border-radius-small);
+  background-color: var(--figma-hud);
+}
+
+.listActive {
+  pointer-events: auto;
+  opacity: 1;
+}
+
+.listItem {
+  composes: text sizeMedium from "../font.css";
+
+  display: flex;
+  align-items: center;
+
+  width: 100%;
+  height: 2.18em;
+  padding: 0 1.45em 0 2.9em;
+
+  list-style-type: none;
+
+  text-align: left;
+
+  cursor: pointer;
+
+  color: var(--figma-white);
+  background-color: var(--figma-hud);
+}
+
+.listItem:hover {
+  color: var(--figma-white);
+  background-color: var(--figma-blue);
+}
+
+.listItemSelected {
+  background-repeat: no-repeat;
+  background-position: 8px 4px;
+  background-position: 0.73em 0.36em;
+}
+
+.listItemInitial {
+  background-color: var(--figma-blue);
+}
+
+.divider {
+  margin: 0;
+  padding: 8px 0 8px 0;
+  padding: 0.73em 0;
+  background-color: var(--figma-hud);
+}
+
+.line {
+  display: block;
+  height: 1px;
+  background-color: var(--figma-white-2);
+}

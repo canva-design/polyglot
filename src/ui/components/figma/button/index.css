@@ -1,0 +1,78 @@
+.root {
+  composes: text sizeMedium weightMedium from "../font.css";
+
+  display: inline-block;
+  flex-shrink: 0;
+
+  margin: 1px 0 1px 0;
+
+  padding: 0.45em 1.45em;
+
+  border: 2px solid transparent;
+  border-radius: var(--border-radius-large);
+  outline: none;
+
+  transition: 0.25s;
+}
+
+.root:hover {
+  cursor: pointer;
+}
+
+.root:active,
+.root:focus {
+  border: 2px solid;
+}
+
+.primary {
+  composes: negative from "../font.css";
+
+  color: var(--figma-white);
+  background-color: var(--figma-blue);
+}
+
+.primary:active,
+.primary:focus {
+  border-color: var(--figma-black-3);
+}
+
+.primary:disabled {
+  background-color: var(--figma-black-3);
+}
+
+.destructive {
+  background-color: var(--figma-red);
+}
+
+.destructive:disabled {
+  opacity: 0.4;
+}
+
+.secondary {
+  composes: positive from "../font.css";
+
+  background-color: var(--figma-white);
+  border: 2px solid var(--figma-black-8);
+  color: var(--figma-black-8);
+}
+
+.secondary:active,
+.secondary:focus {
+  border-color: var(--figma-blue);
+}
+
+.secondary:disabled {
+  border: 1px solid var(--figma-black-3);
+  color: var(--figma-black-3);
+}
+
+.secondary.destructive {
+  background-color: var(--figma-white);
+  border: 1px solid var(--figma-red);
+  color: var(--figma-red);
+}
+
+.secondary.destructive:active,
+.secondary.destructive:focus {
+  border-color: var(--figma-red);
+}

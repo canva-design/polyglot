@@ -1,0 +1,44 @@
+:global(:root) {
+  /* Primary accent, used sparingly for primary actions */
+  --figma-blue: #18a0fb;
+  /* Used for components + instances */
+  --figma-purple: #7b61ff;
+  --figma-purple-4: rgba(123, 97, 255, 0.4);
+  --figma-hot-pink: #ff00ff;
+  --figma-green: #1bc47d;
+  /* Used for text selection in inputs */
+  --figma-blue-3: rgba(24, 145, 251, 0.3);
+  /* Used to communicate error */
+  --figma-red: #f24822;
+  /* Used to communicate cautionary warning */
+  --figma-yellow: #ffeb00;
+
+  /* Light grey hover state for borderless UI controls */
+  --figma-hover-fill: rgba(0, 0, 0, 0.06);
+  --figma-selection-a: #daebf7;
+  --figma-selection-b: #edf5fa;
+  /* Primary background for UI, text on menus */
+  --figma-white: #ffffff;
+  /* Only used for toolbar */
+  --figma-white-8: rgba(255, 255, 255, 0.8);
+  /* Use for disabled menu items on black */
+  --figma-white-4: rgba(255, 255, 255, 0.4);
+  /* Use for menu dividers */
+  --figma-white-2: rgba(255, 255, 255, 0.2);
+
+  /* Used for active states when text is being edited or highlighted */
+  --figma-black: #000000;
+  /* Used for elements in resting state */
+  --figma-black-8: rgba(0, 0, 0, 0.8);
+  /* Lower priority UI elements like labels, disabled UI */
+  --figma-black-3: rgba(0, 0, 0, 0.3);
+  /* Primarily for Input borders on hover */
+  --figma-black-1: rgba(0, 0, 0, 0.1);
+
+  /* For buttons and controls in active or selected state */
+  --figma-grey: #f0f0f0;
+  /* For UI seperator lines */
+  --figma-silver: #e5e5e5;
+  /* Used for heads up display, menu backgrounds and visual bell */
+  --figma-hud: #222222;
+}

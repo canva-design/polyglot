@@ -1,0 +1,24 @@
+.root {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+}
+
+.root button {
+  white-space: nowrap;
+  width: min-content;
+}
+
+.root button:first-child {
+  align-items: center;
+  border-color: transparent !important;
+  color: var(--figma-black-3);
+  display: inline-flex;
+  grid-column: 1;
+}
+
+.root button:last-child {
+  grid-column: 3;
+  justify-self: flex-end;
+}

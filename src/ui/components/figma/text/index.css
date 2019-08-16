@@ -1,0 +1,17 @@
+.paragraph {
+  composes: text sizeSmall from "../font.css";
+
+  line-height: 2;
+  margin-bottom: 1rem;
+}
+
+.h1 {
+  composes: text sizeMedium weightBold from "../font.css";
+  font-size: 24px;
+
+  line-height: 2;
+}
+
+.h2 {
+  composes: text sizeMedium weightBold from "../font.css";
+}

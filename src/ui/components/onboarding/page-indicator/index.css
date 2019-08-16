@@ -1,0 +1,20 @@
+.root {
+  align-items: center;
+  display: flex;
+  grid-column: 2;
+  justify-content: center;
+}
+
+.dot {
+  background: #cfd0d1;
+  border-radius: 100%;
+  height: 0.5rem;
+  margin: 0.25rem;
+  width: 0.5rem;
+  transition: 0.25s;
+}
+
+.active {
+  background: var(--figma-blue);
+  transform: scale(1.5);
+}

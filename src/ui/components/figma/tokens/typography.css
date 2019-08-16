@@ -1,0 +1,17 @@
+:global(:root) {
+  --font-stack: "Inter", sans-serif;
+  --font-size-small: 11px;
+  --font-size-medium: 12px;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 600;
+  --font-lineheight: 16px;
+  --font-letterspacing-pos-small: 0.005em;
+  --font-letterspacing-neg-small: 0.01em;
+  --font-letterspacing-pos-medium: 0;
+  --font-letterspacing-neg-medium: 0.005em;
+  /* pos = positive, dark text on light background */
+  --font-color-pos: var(--figma-white);
+  /* neg = negative, light text on dark background */
+  --font-color-neg: var(--figma-black);
+}

@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "target": "es2018",
+    "lib": ["dom", "es2019"],
+    "jsx": "react"
+  }
+}

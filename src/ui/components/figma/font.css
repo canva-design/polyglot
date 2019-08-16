@@ -1,0 +1,35 @@
+.text {
+  font-family: var(--font-stack);
+  font-size: var(--font-size);
+  font-weight: var(--font-weight, var(--font-weight-normal));
+  letter-spacing: var(--letter-spacing);
+  line-height: var(--font-lineheight);
+}
+
+.sizeSmall {
+  --font-size: var(--font-size-small);
+  --letter-spacing: var(--letterspacing-small);
+}
+
+.sizeMedium {
+  --font-size: var(--font-size-medium);
+  --letter-spacing: var(--letterspacing-medium);
+}
+
+.weightMedium {
+  --font-weight: var(--font-weight-medium);
+}
+
+.weightBold {
+  --font-weight: var(--font-weight-bold);
+}
+
+.positive {
+  --letter-spacing-small: var(--font-letterspacing-pos-small);
+  --letter-spacing-medium: var(--font-letterspacing-pos-medium);
+}
+
+.negative {
+  --letter-spacing-small: var(--font-letterspacing-neg-small);
+  --letter-spacing-medium: var(--font-letterspacing-neg-medium);
+}

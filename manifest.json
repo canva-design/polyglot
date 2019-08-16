@@ -1,0 +1,7 @@
+{
+  "name": "Polyglot by Canva",
+  "id": "736439252271864504",
+  "api": "1.0.0",
+  "ui": "dist/ui.html",
+  "main": "dist/main.js"
+}
